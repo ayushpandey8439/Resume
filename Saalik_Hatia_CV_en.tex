@@ -1,0 +1,188 @@
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+% For the three columns text
+\usepackage{multicol}
+
+\newboolean{long}
+\setboolean{long}{false}
+
+% adjust the page margins
+\usepackage[scale=0.75, top=40pt, bottom=50pt]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\renewcommand*{\namefont}{\fontsize{24}{20}\mdseries\upshape}
+\renewcommand*{\emailsymbol}{}
+\name{Saalik}{\mbox{HATIA}}
+
+
+\title{Distributed Systems Engineer}
+%\title{Docteur en Système Distribué}
+\address{75009 Paris}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{00 33 6 25 49 61 59}                   % optional, remove / comment the line if not wanted
+\social[linkedin][https://www.linkedin.com/in/saalik-hatia/]{Saalik Hatia}
+\email{saalik.hatia@outlook.com}                               % optional, remove / comment the line if not wanted
+\extrainfo{Français}
+\photo[64pt][0pt]{Saalik}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{\mbox{PhD} }                           % optional, remove / comment the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+%% Accroche
+
+\vspace{-1cm}
+
+\section{Skills}
+\closesection{}
+
+
+\begin{multicols}{3}
+    {\large \color{color1} General Skills}
+
+    \textbf{Distributed systems}\\
+    \textbf{Consistency protocols}\\
+    \textbf{Concurrent programming}\\
+    \textbf{Data replication}\\
+    \textbf{Formal specification}\\
+    \textbf{Transactionnal systems}\\
+    \textbf{Storage systems}\\
+    \textbf{CRDTs}\\
+    Database design and architecture\\
+    Object Oriented Programming\\
+    Algorithms\\
+
+
+\vfill\null\columnbreak
+
+
+{\large \color{color1}  Tools} \\
+    NoSQL\\
+    Redis\\
+    RocksDB\\
+    Kafka\\
+    FoundationDB\\
+    Docker\\ 
+    Git\\ 
+    UNIX environnement\\ 
+
+\vfill\null\columnbreak
+
+{\large \color{color1}  Languages}\\
+\textbf{Java}\\ 
+Go\\
+Python\\
+Bash\\ 
+
+
+{\large \color{color1} Speaking}\\
+    French - Native\\
+    English - Fluent\\
+
+\vfill\null\columnbreak
+
+\end{multicols}
+
+
+
+\vspace{-0.8cm}
+
+\section{Experience}
+
+\cventry{2018-2023}{PhD Thesis}{ Team DELYS - LIP6 Sorbonne Université - INRIA, advisor Marc Shapiro}{Paris VI}{}{
+    \begin{itemize}
+        \item \textbf{Collaboration with Scality} in the scope the \textbf{ANR RainbowFS} to work on having a converging distributed FS without locks on a Main-Main configuration
+        \item State of the art on \textbf{replication} and \textbf{consistency} protocols in \textbf{distributed} systems, DB backends, CRDTs and work on improving the \textbf{AntidoteDB} architecture to reduce consistency issues
+        \item Creation of \textbf{transactionnal} consistency semantics for database to build correct database backends, wrote multiple PoC databases.
+        \item \textbf{Thesis}: \textbf{Leveraging formal specification to implement a database backend} {https://www.theses.fr/s267382}
+        \item \textbf{Tech Report}: \textbf{Specification of a Transactionally and Causally-Consistent (TCC) database} https://hal.science/hal-02902474v2
+        \item \textbf{Publication}: Towards a correct, high-performance database backend.
+        \item \textbf{European Project LightKone (H2020)} : \textbf{https://lightkone.eu/}
+        \item \textbf{ANR Project RainbowFS} : \textbf{https://rainbowfs.lip6.fr/}
+    \end{itemize} 
+}
+
+\cventry{2020-2022}{Co-Founder}{Henquo}{Paris}{}{
+    Online training agency. We offered training in MS Office Suite, interior design as well as language courses for professionals looking to learn or improve their skills.
+    Henquo also offered consulting for companies looking to create a training program for their employees.
+    Henquo obtained the Qualiopi certification in 2021.
+}
+
+
+\cventry{2018-2022}{CS Teacher}{\mbox{Sorbonne} Université}{Paris VI}{}{
+    \begin{itemize}
+        \item Concurrent Programming
+        \item Introduction to Object Oriented Programming in Java
+        \item Introduction to operating systems and shell
+    \end{itemize}
+}
+
+\cventry{2018 \mbox{(6 months)}}{Master Research Intern}{LIP6 Sorbonne Université - INRIA, advisor Marc Shapiro}{Paris VI}{}{
+    Study of the AntidoteDB log and materializer. Work on recovery algorithm from the log and implementing safe pruning of the log.
+}
+
+\cventry{2015-2016}{Product Manager}{ookee (Shutdown)}{Paris XIV}{}{
+    ookee was an Android smartphone startup building a product for senior users.
+    Product manager of services, from business development to vulgarization to designing the products. 
+}
+
+
+
+\section{Education}
+\cventry{2023}{PhD}{Leveraging formal specification to implement a database backend}{Sorbonne Université \& INRIA}{}{}
+\cventry{2018}{Master's Degree in Computer Science (Système et Applications Réparties (SAR))}{UPMC}{Paris VI}{}{
+    Design and development of distributed, parallel, large scale systems and applications.
+        }
+\cventry{2015}{B.S. in Conputer Science (Licence en Informatique)}{Université Pierre et Marie Curie (UPMC)}{Paris VI}{}{}
+
+\section{Hobbies}
+\cvitem{}{Cycling, Climbing, Cooking, General tech, Machine architecture, Physics}
+
+
+% \ifthenelse{\boolean{long}}{
+% \section{Enseignement}
+% \cventry{}{Programmation Système Répartie et Concurrente (MU4IN400)}{}{Master}{\mbox{3 $\times$ 40hrs}}{
+%     Introduction à la programmation système en C++. Concurrence (fork et thread), communication inter-processus (signaux, pipes, sockets, mémoire partagée), et syncrhonisation (mutex, conditions, sémaphores).
+%     }
+% \cventry{}{Fondements des systèmes d'exploitation (LU3IN010)}{}{Licence}{\mbox{40hrs}}{
+%     Stratégies d'ordonnancement,
+%     interruptions,
+%     mémoire virtuelle et espace d'adressage,
+%     stratégies de swap,
+%     systèmes de fichiers,
+%     parallélisme et synchronisation (Sémaphores POSIX).
+% }
+% \cventry{}{Introduction à la programmation Système en Shell (LU2IN020)}{}{Licence}{\mbox{2 $\times$ 40hrs}}{
+%     Programmation en Bash, 
+%     environnement Linux,
+%     expressions régulières,
+%     cycle de vie d'un processus,
+%     présentation du Kernel (modes U et S),
+%     agencement de la mémoire des processus,
+%     fonctionnement des appels système,
+%     parallélisme et synchronisation (processus en tâche de fond et wait), signaux.
+%     }
+% \cventry{}{Introduction à la programmation objet en Java (LU2IN002)}{}{Licence}{\mbox{40hrs}}{
+%     Modélisation de problèmes en POO, classes, héritage, interfaces. Introduction à la librairie standard.
+%     }
+% }{}
+
+% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+% \date{Mercredi 30 Septembre 2015}
+% \opening{Madame, Monsieur}
+% \closing{Dans l'attente de votre réponse positive,}
+
+\end{document}
+
