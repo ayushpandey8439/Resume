@@ -29,10 +29,10 @@
 \name{Ayush}{\mbox{Pandey}}
 
 
-\title{Systems Engineer}
+\title{Distributed Systems Researcher}
 %\title{Docteur en Système Distribué}
 \address{75013 Paris}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{07 81 49 75 76}                   % optional, remove / comment the line if not wanted
+% \phone[mobile]{07 81 49 75 76}                   % optional, remove / comment the line if not wanted
 \social[linkedin][www.linkedin.com/in/ayushpandey8439/]{www.linkedin.com/in/ayushpandey8439/}
 \email{ayushpandey8439@gmail.com}                               % optional, remove / comment the line if not wanted
 % \extrainfo{French}
@@ -49,59 +49,72 @@
 
 \vspace{-1cm}
 
-\section{Skills}
-\closesection{}
+\section{Research Interests}
+
+\cventry{}{Distributed Systems, Consistency protocols, CRDTs, Graph Databases}{}{}{}{}
+My primary interest lies at the intersection of distributed systems and connected data. I am particularly interested in the design, implementation, and verification of replication and consistency protocols for distributed systems. During my PhD, I have worked on multi-granularity locking in dynamic hierarchies and developed CALock, a new locking protocol for parallel threads over hierarchical data. I am collaborating with researchers from NOVA LINCS and RPTU Kaiserslautern to specify the correctness of transactional database backends. Alongside, with Telecom Sud-Paris on designing and developing a schema-first, local-first graph system to facilitate collaborative knowledge graph editing.
 
 
-\begin{multicols}{3}
-    {\large \color{color1} General Skills}\\
-    \textbf{Graph databases}\\
-    \textbf{Non-relational data models}\\
-    \textbf{Distributed systems}\\
-    \textbf{Concurrent programming}\\
-    \textbf{Consistency protocols}\\
-    \textbf{Storage systems}\\
-    \textbf{CRDTs}\\
-    \textbf{Formal methods}\\
-    Database design and architecture\\
-    System Design
+\section{Publications}
+\cventry{2025}{Safety of Database Backend Stores}{ICDT}{(Preprint)}{}{}
+\cventry{2025}{Local-First Distributed Property Graphs}{PaPoC}{(Preprint)}{}{}
+\cventry{2025}{CALock: Multi-granularity locking in dynamic hierarchies}{IPDPS}{}{}{}
+\cventry{2024}{Diversifying locks for effective synchronization in dynamic graphs}{EuroSys DW}{}{}{}
+\cventry{2023}{Verrouillage multi-granularité dans les graphes orientés}{ComPas}{}{}{}
+% \cventry{2022}{Persisting the AntidoteDB Cache}{Inria}{Tech Report}{}{}
+
+
+
+% \section{Skills}
+% \closesection{}
+
+
+% \begin{multicols}{3}
+%     {\large \color{color1} General Skills}\\
+%     \textbf{Distributed systems}\\
+%     \textbf{Concurrent programming}\\
+%     \textbf{Consistency protocols}\\
+%     \textbf{Storage systems}\\
+%     \textbf{CRDTs}\\
+%     \textbf{Graph databases}\\
+%     \textbf{Non-relational data models}\\
     
 
-\vfill\null\columnbreak
+% \vfill\null\columnbreak
 
 
-{\large \color{color1}  Tools} \\
-    Neo4j\\
-    Gremlin\\
-    NoSQL\\
-    PostgreSQL\\
-    Redis\\
-    Docker\\ 
-    Git\\ 
-    UNIX environnement\\ 
+% {\large \color{color1}  Tools} \\
+%     Neo4j\\
+%     Gremlin\\
+%     NoSQL\\
+%     PostgreSQL\\
+%     Redis\\
+%     Docker\\ 
+%     Git\\ 
+%     UNIX environnement\\ 
 
-\vfill\null\columnbreak
+% \vfill\null\columnbreak
 
-{\large \color{color1}  Languages}\\
-\textbf{Java}\\ 
-\textbf{C++}\\
-\textbf{Erlang, Elixir}\\
-Python\\
-C\\
-Bash\\
+% {\large \color{color1}  Languages}\\
+% \textbf{Java}\\ 
+% \textbf{C++}\\
+% \textbf{Erlang, Elixir}\\
+% Python\\
+% C\\
+% Bash\\
 
-{\large \color{color1} Speaking}\\
-    Hindi -Native\\
-    English - Fluent\\
-    French - Conversational\\    
+% {\large \color{color1} Speaking}\\
+%     Hindi -Native\\
+%     English - Fluent\\
+%     French - Conversational\\    
 
-\vfill\null\columnbreak
+% \vfill\null\columnbreak
 
-\end{multicols}
+% \end{multicols}
 
 
 
-\vspace{-0.8cm}
+% \vspace{-0.8cm}
 
 \section{Experience}
 
@@ -109,9 +122,9 @@ Bash\\
     \begin{itemize}
         \item \textbf{Thesis}: \textbf{CALock: topological multi-granularity locking in hierarchies}
         \item \textbf{Designed, implemented and verified a new locking protocol for parallel threads over hierarchical data.} CAlock identifies an optimal grain size for locking in a hierarchy of data structures.
-        \item Implemented and verified several thread synchronization protocols in java and c++ as well as database implementations in TinkerPop as PoC.
+        \item Implemented and verified several thread synchronization protocols in java and C\texttt{++} as well graph database implementations in TinkerPop(gremlin) as proof of concept.
         Performed benchmarks for performance evaluation.
-        \item Collaboration in projects involving \textbf{industry partners and research labs}. Ongoing collaboration with Telecom sudParis under the project VERDI to design, implement and formally verify a distributed graph database. Second ongoing work within LIP6 on the specification and verification of a distributed key value store. 
+        \item Collaboration in projects involving \textbf{industry partners and research labs}. Ongoing collaboration with Telecom sud-Paris to design, implement and formally verify a distributed graph database. Second ongoing work within LIP6 on the specification and verification of a distributed key-value store. 
     \end{itemize} 
 }
 
@@ -156,8 +169,8 @@ Bash\\
 
 
 \section{Education}
-\cventry{2025}{PhD in Distributed systems}{LIP6, Sorbonne Université (UPMC)}{}{}{}
-\cventry{2022}{Master in CS, Software Engineering}{TU Kaiserslautern}{Kaiserslautern, Germany}{}{}
+\cventry{2025}{PhD in Distributed systems}{LIP6, Sorbonne Université (UPMC)}{France}{}{}
+\cventry{2022}{Master in CS, Software Engineering}{TU Kaiserslautern}{Germany}{}{}
 \cventry{2017}{Bachelor of Technology}{APJ Abdul kalam technical university}{India}{}{}
 
 % \section{Hobbies}
